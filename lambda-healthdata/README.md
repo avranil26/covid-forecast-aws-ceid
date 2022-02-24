@@ -4,4 +4,4 @@ This repository creates a R runtime environment and function to work on AWS Lamb
 
 This lambda function is trigerred using an AWS Eventbridge rule to pull data periodically.
 
-For better understanding of how the runtime environment and deploying an R code on Lambda works check out this [blog post]((https://mdneuzerling.com/post/r-on-aws-lambda-with-containers/)) by MDNEUZERLING which helped me build this container image.
+For better understanding of how the runtime environment and deploying an R code on Lambda works check out this [blog post](https://mdneuzerling.com/post/r-on-aws-lambda-with-containers/) by MDNEUZERLING which helped me build this container image.
