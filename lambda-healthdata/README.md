@@ -1,5 +1,5 @@
 # R on AWS Lambda
 
-This is an attempt to get an R runtime and function working on AWS Lambda using a container. [My blog post on this subject is available here](https://mdneuzerling.com/post/r-on-aws-lambda-with-containers/), but the code has since been updated.
+This repository creates a R runtime environment and function to work on AWS Lambda by deploying the container image on AWS ECR .
 
-Thanks to @rensa for contributions to the error handling code.
+For better understanding of how the runtime environment and deploying an R code on Lambda works check out this [blog post]((https://mdneuzerling.com/post/r-on-aws-lambda-with-containers/)) by MDNEUZERLING which helped me build this container image.
