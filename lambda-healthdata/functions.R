@@ -6,7 +6,7 @@ library(tidyverse)
 parity <- function(event) {
   
   bucket_name <- Sys.getenv("bucket_name")
-  forecast_loc <- Sys.getenv("focecast_loc")
+  forecast_loc <- Sys.getenv("forecast_loc")
   forecast_date <- Sys.Date()
 
   abb <- covidHubUtils::hub_locations %>% 
@@ -31,7 +31,7 @@ parity <- function(event) {
     }
   }
 
-  outdir <- file.path("healthdata", forecast_date) 
+  outdir <- file.path("healthdata", forecast_date, forecast_loc) 
   file_name = file.path(outdir, "epidata.parquet")
   #file_name <- "epi.parquet" 
   writeToS3(out, bucket_name, file_name)

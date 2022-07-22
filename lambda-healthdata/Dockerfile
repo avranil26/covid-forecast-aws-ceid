@@ -39,4 +39,3 @@ RUN chmod 755 -R ${LAMBDA_TASK_ROOT}/
 
 RUN printf '#!/bin/sh\ncd $LAMBDA_TASK_ROOT\nRscript runtime.R' > /var/runtime/bootstrap \
   && chmod +x /var/runtime/bootstrap
-
